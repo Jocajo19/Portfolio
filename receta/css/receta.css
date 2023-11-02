@@ -5,40 +5,60 @@
 /*
 /******************************************/
 
-@font-face {
-    font-family: titulo;
-    src: url();
-}
+@font-face {font-family:titulo;
+            src: url(../Font/October\ Night.ttf);}
+
+@font-face {font-family:wrapper;
+            src: url(../Font/christmas-kids/Christmas\ Kids.otf);}
 
 @font-face {
     font-family: texto;
-    src: url();
+    src: url(../Font/October\ Night.ttf);
 }
 * {box-sizing: border-box;}             /* el width incluye el padding el espacio en blanco lo coge de dentro del cuadro lo haré siempre */
-body{background-color: blueviolet;
-    background-image: url(./../img/08-10-2015-cake_pattern_outline_dots.jpg);
-    background-size: 50%;} 
+body{background-image: url(./../img/08-10-2015-cake_pattern_outline_dots.jpg);
+     background-size: 50%;} 
 
-#wrapper {background-color: #fff;
-            width: 80%;                     /* el width va en porcentaje */
-            margin:auto;
-            padding: 10%;
-            border-radius:20px ;}             
+#wrapper {background-color: rgb(255, 236, 217);
+          width: 80%;                     /* el width va en porcentaje */
+          margin:auto;
+          padding: 10%;
+          border-radius:20px; 
+          color: #ffffff;
+          font-family: wrapper;}             
         
-h1 {border:2px solid red;
+h1 {border:2px solid rgb(73, 47, 35);
     text-align: center;
-    padding: 10px ;
-    /* sombra de caja */
-    box-shadow: 15px 15px 15px gray;
-    ;}            
-blockquote {border-left: 3px solid blueviolet;
+    padding: 10px ;  
+    box-shadow: 15px 15px 15px rgb(104, 81, 81);            /* sombra de caja */
+    font-family:titulo;
+    color:#562b05;
+    background-color: #e6b68b;} 
+  
+
+blockquote {border-left: 3px solid rgb(54, 32, 18);
             font-style: italic;             /* para poner en cursiva */
             font-weight: bold;              /* para poner en negrita */
-            background-color: gray;
+            background-color: #7a5848;
             padding: 10px;                  /* margin y padding pequeños pueden estar en pixeles */
         }
 #foto {width: 80%;
        margin: auto;                        /* a todo el ancho dnd esta colocada , en este caso, el wrapper */
-       display: block;}                     /* para que se comporte como un bloque */   
-    h2 {color: brown;}
-    font-size: {1.2em;}
+       display: block;
+       margin-bottom: 10%;}                     /* para que se comporte como un bloque */   
+
+h2 {color: brown;
+    font-size: 1.2em;
+    text-decoration: underline;}
+
+dt {font-weight: bold;
+    color: #341100;}
+
+dd {color: black;
+    font-family:texto;}
+
+ol {color: black;
+    font-family:texto;}
+
+li {color: black;
+    font-family:texto;}
