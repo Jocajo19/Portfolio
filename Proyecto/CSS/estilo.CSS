@@ -48,7 +48,7 @@ nav {font-family: runas;
 #hero {background-image:url(../IMG/duelo-de-samurais_4ceaf5af_1280x1020.jpg);
        height: 95vh;                /****** forzar el alto de la hero para ver la foto *****/
        background-size: cover;      /****** Estira la foto para verla encajar          *****/
-       background-position: 66.66%; /** donde esta el punto de interes de la foto  *****/
+       background-position: 33.33%; /** donde esta el punto de interes de la foto  *****/
        font-family: runas; 
        color: rgb(255, 255, 255);
        font-size: 1.8em;
