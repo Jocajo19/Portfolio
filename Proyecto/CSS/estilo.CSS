@@ -1,0 +1,91 @@
+/****************************************************************/
+
+/*          Aqui va el comentario de estilo                     */
+
+/****************************************************************/
+/************* fuentes *********************/
+@font-face {
+    font-family: texto;
+    src: url(../FONT/BLKCHCRY.TTF);
+}
+@font-face {
+    font-family: runas;
+    src: url(../FONT/RunyTunesRevisitedNF.ttf);
+}
+
+
+
+
+body {background-color: black;
+      color: white;
+      font-family: texto;
+      font-size: 2em;}
+
+#wrapper {width: 80%;
+          background-color: rgb(0, 0, 0);
+          margin: auto;}
+
+.titulo {font-family:runas;
+         text-align: center;
+         font-size: 1.5em;}
+
+
+.foto {display: flex; /* Establece un contenedor flexible */
+       align-items: center; /* Centra los elementos verticalmente */
+       margin: auto;
+       width: 75%;}
+        
+img { max-width: 100%; /* La imagen no superará el ancho del contenedor */
+margin-right: 20%; /* Añade un espacio a la derecha de la imagen */
+}
+/****************** Estilo general *********************/
+nav {font-family: runas;
+     text-align: left;
+     color: #EABE3F;}
+
+/****************** Hero Section ***********************/
+
+#hero {background-image:url(../IMG/duelo-de-samurais_4ceaf5af_1280x1020.jpg);
+       height: 95vh;                /****** forzar el alto de la hero para ver la foto *****/
+       background-size: cover;      /****** Estira la foto para verla encajar          *****/
+       background-position: 66.66%; /** donde esta el punto de interes de la foto  *****/
+       font-family: runas; 
+       color: rgb(255, 255, 255);
+       font-size: 1.8em;
+       padding-left: 20px;
+       padding-top: 20px;
+       color: #EABE3F}    
+
+
+
+/***************************** Intro section *********************/
+#intro {padding: 5%;
+        border-bottom: 2px solid #EABE3F;}
+
+    
+#intro p::first-letter {font-size: 1.7em;
+                        color: #EABE3F;}
+
+#intro p {text-align: justify;}
+
+/**************** section gallery *****************/
+
+#gallery {padding: 5% 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************responsividad***************************/
+
+@media only screen and (width<800px){#wrapper {width: 95%}; #hero {background-image: url(../IMG/);}
+img {width: 100%} img{background-image: url(../IMG/samurai.jpeg)}
+}   
