@@ -40,7 +40,11 @@ img { max-width: 100%; /* La imagen no superará el ancho del contenedor */
 margin-right: 20%; /* Añade un espacio a la derecha de la imagen */
 }
 /****************** Barra de Navegacion *********************/
-nav {font-family: runas;
+nav {position: sticky;
+     top: 0;
+     opacity: 0.7;
+     z-index: 99;
+     font-family: runas;
      text-align: left;
      color: #EABE3F;}
 
@@ -78,6 +82,8 @@ nav {font-family: runas;
     display: none;
   } 
 
+html {scroll-behavior: smooth;}
+
 /****************** Hero Section ***********************/
 
 #hero {background-image:url(../IMG/duelo-de-samurais_4ceaf5af_1280x1020.jpg);
@@ -93,39 +99,113 @@ nav {font-family: runas;
 
 /********* Periodos ***********/
 
-.accordion {
-  background-color: #fffc65;
-  font-size: 1.1em;
-  color: #ff0000;
-  cursor: pointer;
-  padding: 18px;
+*,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+
+/*Section used for centering process*/
+#Periodos {
   width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #d3cf00;
-}
-
-.panel {
-  padding: 0 18px;
+  height: 100vh;
   background-color: #000000;
-  display: none;
-  overflow: hidden;
-}
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item{
+  background-color: #000000;
+  border-radius: .4rem;
+}
+
+.accordion-item hr{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.accordion-link{
+  font-size: 1.6rem;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link h3{
+  font-weight:500;
+  font-size: 20px;
+}
+
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .5rem;
+  
+}
+
+.accordion-link ul{
+  display:flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.accordion-link li{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 0 1px 5px;
+}
+
+.accordion-link div{
+  display: flex;
+}
+
+.accordion-link .ion-md-arrow-down{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  transition: max-height 650ms;
+}
+
+
+
+.answer p{
+  color: #fff;
+  font-size: 15px;
+  padding: 2rem;
+  
+}
+
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-forward{
+  display: none
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-down{
+  display: block;
 }
 
 /***************************** Intro section *********************/

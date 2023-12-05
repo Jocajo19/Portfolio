@@ -8,39 +8,19 @@
     <link rel="shortcut icon" href="./IMG/samurai.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./JS/funciones.js"></script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      /* Toggle between adding and removing the "active" class,
-      to highlight the button that controls the panel */
-      this.classList.toggle("active");
-  
-      /* Toggle between hiding and showing the active panel */
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-    </script>
     <style>img{
         float: left;
         margin: 50px 30px 30px 0}
         </style>
 </head>
 <body>
-    < id="wrapper">
+    <div id="wrapper">
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#" class="active">Home</a>
+                <a href="#Periodos">Periodos</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#fotos">Fotos</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
@@ -49,30 +29,96 @@
         <section id="hero">
             SAMURAIS
         </section>
-        <section id="intro">
-            <div class="titulo">HISTORY OF SAMURAIS</div>
-                <img src="./IMG/300px-Genpei_kassen.jpg" alt="Heian">
-                <p>Período Heian (794-1185):
-                Durante el período Heian, los samuráis eran originalmente guerreros empleados por la corte imperial.accordion:after {
-                    content: '\02795'; /* Unicode character for "plus" sign (+) */
-                    font-size: 13px;
-                    color: #777;
-                    float: right;
-                    margin-left: 5px;
-                  }
-                  
-                  .active:after {
-                    content: "\2796"; /* Unicode character for "minus" sign (-) */
-                  }miento de los samuráis como una clase militar independiente ocurrió durante el período Kamakura. Después de la Guerra de Genpei (1180-1185), Minamoto no Yoritomo estableció el shogunato Kamakura, marcando el inicio del gobierno militar en Japón. Los samuráis se convirtieron en la fuerza dominante y desarrollaron un código ético conocido como el "bushido".</p>
-                <img src="./IMG/400px-Onin_Yoshitora.jpg" alt="Muromachi">
-                <p>Período Muromachi (1333-1573):
-                Durante este período, Japón experimentó una serie de conflictos y guerras civiles, conocidas como las Guerras Onin. Los samuráis estaban divididos en facciones, y muchos se convirtieron en mercenarios. La figura del daimyo, un señor feudal, se destacó como líder militar.</p>
-                <p>Período Azuchi-Momoyama (1573-1603):
-                Este período presenció el ascenso de Oda Nobunaga, Toyotomi Hideyoshi y, finalmente, Tokugawa Ieyasu. Tokugawa estableció el shogunato Tokugawa en 1603, poniendo fin a las luchas civiles. Durante este tiempo, los samuráis se consolidaron como la clase gobernante, pero también experimentaron un período de paz relativa.</p>
-                <p>Período Edo (1603-1868):
-                El período Edo fue una época de estabilidad y paz bajo el gobierno de los Tokugawa. Sin embargo, los samuráis se enfrentaron a una disminución en la actividad militar. Muchos se convirtieron en burócratas, artistas o maestros de las artes marciales. El código bushido se volvió más idealizado, centrándose en la lealtad y la moral.</p>
-                <p>Restauración Meiji (1868):
-                Con la Restauración Meiji, Japón experimentó cambios radicales. El emperador asumió el control directo y se abolió el sistema de clases, incluida la clase samurái. Los samuráis perdieron sus privilegios y muchos se enfrentaron a dificultades económicas.</p>
+            <section id="Periodos">
+                <div class="titulo">HISTORY OF SAMURAIS</div>
+                <div class="container">
+                  <div class="accordion">
+                    <div class="accordion-item" id="question1">
+                      <a class="accordion-link" href="#question1">
+                        <div class="flex">
+                          <h3>Periodo HEIAN (794-1185)</h3>
+                          
+                        </div>
+                        <i class="icon ion-md-arrow-forward"></i>
+                        <i class="icon ion-md-arrow-down"></i>
+                      </a>
+                      <div class="answer">
+                        <img src="./IMG/300px-Genpei_kassen.jpg" alt="Heian">
+                    <p>Período Heian   (794-1185):
+                    Durante el período Heian, los samuráis eran originalmente guerreros empleados por la corte imperialmiento de los samuráis como una clase militar independiente ocurrió durante el período Kamakura. Después de la Guerra de Genpei (1180-1185), Minamoto no Yoritomo estableció el shogunato Kamakura, marcando el inicio del gobierno militar en Japón. Los samuráis se convirtieron en la fuerza dominante y desarrollaron un código ético conocido como el "bushido".</p>
+                      </div>
+                      <hr>
+                  </div>
+                    <div class="accordion-item" id="question2">
+                      <a class="accordion-link" href="#question2">
+                        <div class="flex">
+                          <h3> Periodo MUROMACHI (1333-1573)</h3>
+                          
+                        </div>
+                        <i class="icon ion-md-arrow-forward"></i>
+                        <i class="icon ion-md-arrow-down"></i>
+                      </a>
+                      <div class="answer">
+                        <img src="./IMG/400px-Onin_Yoshitora.jpg" alt="Muromachi">
+                    <p>Período Muromachi   (1333-1573):
+                    Durante este período, Japón experimentó una serie de conflictos y guerras civiles, conocidas como las Guerras Onin. Los samuráis estaban divididos en facciones, y muchos se convirtieron en mercenarios. La figura del daimyo, un señor feudal, se destacó como líder militar.</p>
+                      </div>
+                      <hr>
+                  </div>
+                    <div class="accordion-item" id="question3">
+                      <a class="accordion-link" href="#question3">
+                        <div class="flex">
+                          <h3>Periodo AZUCHI-MOMOYAMA   (1573-1603)</h3>
+                          
+                        </div>
+                        <i class="icon ion-md-arrow-forward"></i>
+                        <i class="icon ion-md-arrow-down"></i>
+                      </a>
+                      <div class="answer">
+                        <img src="./IMG/300px-Periodo_kamakura,_dodici_generali_celesti_in_piedi,_XII-XIII_sec._01.jpeg" alt="Azuchi-Momoyama">
+                        <p>Período Azuchi-Momoyama (1573-1603):
+                            Este período presenció el ascenso de Oda Nobunaga, Toyotomi Hideyoshi y, finalmente, Tokugawa Ieyasu. Tokugawa estableció el shogunato Tokugawa en 1603, poniendo fin a las luchas civiles. Durante este tiempo, los samuráis se consolidaron como la clase gobernante, pero también experimentaron un período de paz relativa.</p>
+                      </div>
+                      <hr>
+                  </div>
+                    <div class="accordion-item" id="question4">
+                      <a class="accordion-link" href="#question4">
+                        <div class="flex">
+                          <h3>Periodo EDO   (1603-1868)</h3>
+                          
+                        </div>
+                        <i class="icon ion-md-arrow-forward"></i>
+                        <i class="icon ion-md-arrow-down"></i>
+                      </a>
+                      <div class="answer">
+                        <img src="./IMG/300px-Nihonbashi-Fish-Market-Prosperity-Ukiyoe-Utagawa-Kuniyasu.png" alt="EDO">
+                        <p>Periodo Edo (1603-1868):
+                            El período Edo fue una época de estabilidad y paz bajo el gobierno de los Tokugawa. Sin embargo, los samuráis se enfrentaron a una disminución en la actividad militar. Muchos se convirtieron en burócratas, artistas o maestros de las artes marciales. El código bushido se volvió más idealizado, centrándose en la lealtad y la moral.</p>
+                      </div>
+                      <hr>
+                      
+                 </div>
+                 <div class="accordion-item" id="question5">
+                    <a class="accordion-link" href="#question5">
+                        <div class="flex">
+                        <h3>Restauración MEIJI   (1603-1868)</h3>
+                        
+                      </div>
+                      <i class="icon ion-md-arrow-forward"></i>
+                      <i class="icon ion-md-arrow-down"></i>
+                    </a>
+                    <div class="answer">
+                      <img src="./IMG/MeijiJoukyou.jpg" alt="Restauración MEIJI (1868)">
+                      <p>Periodo Edo (1603-1868):
+                        Restauración Meiji (1868):
+                        Con la Restauración Meiji, Japón experimentó cambios radicales. El emperador asumió el control directo y se abolió el sistema de clases, incluida la clase samurái. Los samuráis perdieron sus privilegios y muchos se enfrentaron a dificultades económicas.</p>
+                    </div>
+                
+                    <hr>
+                </div>
+                </div>
+              </section>
+                
                 <p>Japón moderno:
                 Con la abolición del sistema de clases, los samuráis dejaron de existir como una clase social distintiva. Sin embargo, su legado persiste en la cultura japonesa y en el imaginario popular. La figura del samurái ha sido idealizada en la literatura, el cine y otras formas de arte, y el código bushido continúa influyendo en la ética y la moral en Japón.</p>
         </section>
@@ -93,37 +139,11 @@
             <div class="titulo">GALLERY</div>
         </section>
         
-        <section>
-            <!-- Uso de ACCordion para presentar mucha informacion en formato despegable: 
-                Estructurado en varios capitulos, ETC...-->
-                <button class="accordion">Heian</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione adipisci dolorem aspernatur odit laboriosam fugit minima, consequuntur eos numquam quos eveniet cupiditate, mollitia corporis, earum a? Possimus laborum alias repudiandae!</p>
-                </div>
-                
-                <button class="accordion">Kamakura</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia sequi provident eveniet pariatur facere cupiditate voluptates vero officia eos harum, obcaecati rem ad sunt deserunt architecto laudantium nemo ducimus dolorem.</p>
-                </div>
-                
-                <button class="accordion">Muromachi</button>
-                <div class="panel">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque recusandae quaerat, quae voluptate excepturi ipsam aspernatur est quam eaque voluptatem vitae sapiente, quis exercitationem nulla earum rem amet officia!</p>
-                </div>
-                
-                <button class="accordion">Azuchi-Momoyama</button>
-                <div class="panel">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque recusandae quaerat, quae voluptate excepturi ipsam aspernatur est quam eaque voluptatem vitae sapiente, quis exercitationem nulla earum rem amet officia!</p>
-                </div>
-
-
-        </section>
+        
 
         <section id="fotos">
-            div.grid4>
-
-        </section>
-            <div class="grid-4">
+            <div class="titulo">FOTOS</div>
+                <div class="grid-4">
                 <div class="col-4">
                     <img src="./IMG/Ishida_Mitsunari.jpg" alt="samurai periodo Azuchi-Momoyama">
                     <h3>Ishida Mitsunari</h3>
@@ -141,7 +161,7 @@
                     <h3>Sasaki Kojiro</h3>
                 </div>
             </div>
-
+        </div>
         </section>
         <footer>
             autor: Jose Alcaide
