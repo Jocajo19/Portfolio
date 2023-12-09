@@ -1,6 +1,6 @@
 /****************************************************************/
 
-/*          Aqui va el comentario de estilo                     */
+/*         Autor Jose Alcaide Fernández                         */
 
 /****************************************************************/
 /************* fuentes *********************/
@@ -220,7 +220,7 @@ html {scroll-behavior: smooth;}
 
 /********************* section ejemplo-grid-2************/
 
-.grid-2 {display: grid; /********** contenedor va a sufrir una division en columnas **********/
+.Palacios {display: grid; /********** contenedor va a sufrir una division en columnas **********/
          grid-template-columns: 50% 50%;}
 
 .col-2 {padding: 4% ;}
@@ -265,7 +265,7 @@ button:hover   {background-color: #EABE3F;
 
 @media only screen and (width<650px){#wrapper {width: 95%}; #hero {background-image: url(../IMG/);}
 img {width: 100%} img{background-image: url(../IMG/samurai.jpeg)}
-.grid-2 {grid-template-columns: 100%;}
+.Palacios {grid-template-columns: 100%;}
 .grid-4 {grid-template-columns: 100%;}
 
 }  
